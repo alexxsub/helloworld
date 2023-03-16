@@ -6,7 +6,7 @@ gcc hello.c -o hello
 ## run python
 ```bash
 python3 hello.py
-```bash
+```
 ## run node.js
 ```bash
 node hello.js
