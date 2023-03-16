@@ -1,7 +1,7 @@
 ## compile c example and run
 ```bash
 gcc hello.c -o hello
-./hell
+./hello
 ```
 ## run python
 ```bash
