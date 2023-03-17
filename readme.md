@@ -53,8 +53,10 @@ time java Hello.class>/dev/null      0m8.478s
 time node read.js>/dev/null          0m51.625s
 time node read2.js>/dev/null         0m51.450s
 time node read3.js>/dev/null         0m39.163s
+time node read4.js>/dev/null         0m0.294s
 
 time ./read.py >/dev/null            0m0.128s
+time ./read2.py >/dev/null           0m14.652s
 
 time ./read.sh >/dev/null            1m22.460s
 time ./read2.sh >/dev/null           0m6.176s
