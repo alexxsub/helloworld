@@ -36,7 +36,7 @@ go build -o gohello gohello.go
 ./gohello
 ```
 
-## testing time
+## testing time with read 1 millon records from file
 ```bash
 time ./goread>/dev/null              0m6.967s
 time go run runread.go>/dev/null     0m5.756s
