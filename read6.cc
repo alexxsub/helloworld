@@ -1,13 +1,14 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+using namespace std;
 
 int main()
 {
-  std::ifstream input("input.txt");
-  std::stringstream sstr;
+  ifstream input("input.txt");
+  stringstream sstr;
 
   while(input >> sstr.rdbuf());
 
-  std::cout << sstr.str() << std::endl;
+  cout << sstr.str() << endl;
 }

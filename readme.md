@@ -37,9 +37,29 @@ go build -o gohello gohello.go
 ```
 
 ## testing time with read 1 millon records from file
+## generate file input.txt 
+```bash
+for i in {1..1000000} ; do echo -e $i ;  done > input.txt
+```
+## count lines in file
+```bash
+cat input.txt |wc -l
+```
+## size of file
+```bash
+cat input.txt |wc -c
+```
+
+## compile c++
+```bash
+ g++ read.cc -o read
+```
+
 ```bash
 time ./goread>/dev/null              0m5.499s
 time go run runread.go>/dev/null     0m5.913s
+time ./goread2>/dev/null             0m0.126s
+time go run read2.go>/dev/null       0m0.063s
 
 time ./read>/dev/null                0m3.309s  # c++
 time ./read2>/dev/null               0m0.137s
@@ -47,6 +67,7 @@ time ./read3>/dev/null               0m7.124s
 time ./read4>/dev/null               0m0.130s
 time ./read5>/dev/null               0m7.705s
 time ./read6>/dev/null               0m0.180s
+
 
 time java Hello.class>/dev/null      0m8.478s
 
